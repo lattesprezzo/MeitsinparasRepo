@@ -4,12 +4,19 @@ public class MovementScript : MonoBehavior
 {
     float speed = 5f;
 
-    void Update()
+    void Update()////////////////////////////////////////
     {
-        move();
+        hMove();
+        vMove();
+    }///////////////////////////////////////////////////
+
+    void hMove(){
+        float hInput = Input.GetAxis("Horizontal")
+        transform.Translate(Vector3.right * speed * hInput * Time.deltaTime)
     }
 
-    void move(){
-        float hInput
+    void vMove()
+    {
+        
     }
 }
